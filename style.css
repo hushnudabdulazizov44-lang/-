@@ -22,7 +22,8 @@ body{
 }
 
 .hero h1{
-    font-size:48px;
+    font-family:'Marck Script', cursive;
+    font-size:58px;
     color:#b76e79;
     margin-bottom:20px;
 }
