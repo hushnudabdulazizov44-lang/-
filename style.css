@@ -138,3 +138,22 @@ body{
         transform:translateY(0);
     }
 }
+.heart{
+    position:fixed;
+    bottom:-50px;
+    font-size:28px;
+    animation:flyHeart 6s linear forwards;
+    pointer-events:none;
+    z-index:9999;
+}
+
+@keyframes flyHeart{
+    0%{
+        transform:translateY(0) scale(0.8);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-120vh) scale(1.5);
+        opacity:0;
+    }
+}
