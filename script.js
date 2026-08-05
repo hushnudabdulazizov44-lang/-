@@ -43,7 +43,7 @@ openBtn.addEventListener("click", () => {
 
         setInterval(createHeart, 700);
         setInterval(createPetal, 500);
-
+        setInterval(createSparkle, 400);
     }, 800);
 
 });
