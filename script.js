@@ -4,12 +4,19 @@ const card = document.querySelector(".card");
 const music = document.getElementById("music");
 
 openBtn.addEventListener("click", () => {
-    hero.style.display = "none";
-    card.style.display = "block";
 
-    if (music) {
-        music.play().catch(() => {});
-    }
+    const flap = document.querySelector(".flap");
+    flap.style.transform = "rotateX(180deg)";
+
+    setTimeout(() => {
+        hero.style.display = "none";
+        card.style.display = "block";
+
+        if (music) {
+            music.play().catch(() => {});
+        }
+    }, 800);
+
 });
 
 const targetDate = new Date("2026-09-04T19:00:00").getTime();
