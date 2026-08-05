@@ -15,6 +15,7 @@ openBtn.addEventListener("click", () => {
         if (music) {
             music.play().catch(() => {});
         }
+        setInterval(createHeart, 700);
     }, 800);
 
 });
