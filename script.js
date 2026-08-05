@@ -16,6 +16,7 @@ openBtn.addEventListener("click", () => {
             music.play().catch(() => {});
         }
         setInterval(createHeart, 700);
+        setInterval(createPetal, 500);
     }, 800);
 
 });
