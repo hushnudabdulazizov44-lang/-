@@ -35,8 +35,22 @@ openBtn.addEventListener("click", () => {
     setTimeout(() => {
 
         hero.style.display = "none";
+        
         card.style.display = "block";
+        card.style.opacity = "0";
+card.style.transform = "translateY(50px)";
 
+    setTimeout(() => {
+
+        card.style.transition = "all 0.8s ease";
+
+        card.style.opacity = "1";
+
+        card.style.transform = "translateY(0)";
+
+    }, 50);
+
+}, 500);
         if (music) {
             music.play().catch(() => {});
         }
