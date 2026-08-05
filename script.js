@@ -18,7 +18,7 @@ function createHeart() {
 function createPetal() {
     const petal = document.createElement("div");
     petal.className = "petal";
-    petal.innerHTML = "🌹";
+    petal.innerHTML = "🌸";
     petal.style.left = Math.random() * window.innerWidth + "px";
     document.body.appendChild(petal);
 
