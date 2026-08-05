@@ -198,3 +198,23 @@ body{
         transform:translateY(-80px) scale(0);
     }
 }
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.5), transparent 25%),
+    radial-gradient(circle at 80% 30%, rgba(255,255,255,.4), transparent 20%),
+    radial-gradient(circle at 50% 80%, rgba(255,255,255,.4), transparent 25%);
+    animation:glow 8s ease-in-out infinite alternate;
+    pointer-events:none;
+}
+
+@keyframes glow{
+    from{
+        opacity:.4;
+    }
+    to{
+        opacity:.9;
+    }
+}
