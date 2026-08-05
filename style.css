@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#fff8f8,#fff0f5);
+    color:#444;
+    overflow-x:hidden;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#b76e79;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:35px;
+    max-width:350px;
+    line-height:1.6;
+}
+
+button{
+    background:#b76e79;
+    color:white;
+    border:none;
+    padding:16px 38px;
+    border-radius:40px;
+    font-size:20px;
+    cursor:pointer;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.08);}
+    100%{transform:scale(1);}
+}
+
+.card{
+    max-width:500px;
+    margin:40px auto;
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.card h2{
+    color:#b76e79;
+    margin-bottom:20px;
+}
+
+.card p{
+    margin:12px 0;
+    font-size:20px;
+}
+
+.countdown{
+    display:flex;
+    justify-content:space-between;
+    margin:30px 0;
+    gap:10px;
+}
+
+.countdown div{
+    flex:1;
+    background:#fff4f7;
+    border-radius:15px;
+    padding:15px;
+}
+
+.countdown span{
+    font-size:28px;
+    color:#b76e79;
+    font-weight:bold;
+}
+
+.family{
+    margin-top:35px;
+    color:#b76e79;
+    line-height:1.6;
+}
