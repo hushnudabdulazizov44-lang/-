@@ -83,18 +83,17 @@ body{
 }
 
 .card{
+    display:none;
+    opacity:0;
+    transform:translateY(50px);
+
     max-width:500px;
     margin:40px auto;
-
-    opacity:0;
-transform:translateY(50px);
-    
     background:white;
     border-radius:25px;
     padding:30px;
     text-align:center;
     box-shadow:0 10px 30px rgba(0,0,0,.15);
-    animation:showCard 1s ease;
 }
 
 .card h2{
